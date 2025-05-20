@@ -129,7 +129,7 @@ const todos = ref<Todo[]>([])
 const newTodo = ref('')
 const newPriority = ref('medium')
 const editingTodo = ref<string | null>(null)
-const API_URL = 'http://backend:3000/api'
+const API_URL = '/api'
 
 const sortedTodos = computed(() => {
   return [...todos.value].sort((a, b) => {
